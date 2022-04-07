@@ -4,7 +4,7 @@ const cycleStartButton = document.getElementById("cycle");
 
 document.getElementById("submit").addEventListener("click", startTimer)
 
-startTimer(setTimeout(function[])) {
+function startTimer() {
 
 }
 
