@@ -19,6 +19,7 @@ start.addEventListener('click', function(){
 })
 
 function timer(){
+    //Work Timer
     if(ws.innerText != 0) {
         ws.innerText--;   
     } else if(wm.innerText != 0 && ws.innerText == 0) {
@@ -26,12 +27,12 @@ function timer(){
     wm.innerText--;
     }
 
-if(wm.innerText == 0 && ws.innerText == 0) {
-    if(bs.innerText != 0) {
-        bs.innterText--;
-    } else if(bm.innerText != 0 && bs.innerText == 0) {
-        bs.innerText = 59;
-        bm.innerText--;
+    if(wm.innerText == 0 && ws.innerText == 0) {
+        if(bs.innerText != 0) {
+            bs.innterText--;
+        } else if(bm.innerText != 0 && bs.innerText == 0) {
+            bs.innerText = 59;
+            bm.innerText--;
     }
 }
 
