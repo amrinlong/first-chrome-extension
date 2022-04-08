@@ -19,8 +19,22 @@ function timer(){
     }
 
 if(wm.innerText == 0 && ws.innerText == 0) {
-    if(breakStartButton.innerText != 0) {
-
+    if(bs.innerText != 0) {
+        bs.innterText--;
+    } else if(bm.innerText != 0 && bs.innerText == 0) {
+        bs.innerText = 59;
+        bm.innerText--;
     }
 }
 
+if(wm.innerText == 0 && wm.innerText == 0 && bm.innerText == 0 && bs.innerText == 0) {
+    wm.innerText =25
+    ws.innerText = "00";
+
+    bm.innerText == 5;
+    bs.innerText == "00"
+
+    document.getElementById('counter').innerText++;
+}
+
+}
