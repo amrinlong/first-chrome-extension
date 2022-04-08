@@ -10,6 +10,14 @@ var bm = document.getElementById('b_seconds')
 
 var startTimer
 
+start.addEventListener('click', function(){
+    if(startTimer === undefined) {
+        startTimer = setInteral(timer, 1000)
+    } else {
+        alert('Timer is already running');
+    }
+})
+
 function timer(){
     if(ws.innerText != 0) {
         ws.innerText--;   
