@@ -23,8 +23,8 @@ function timer(){
     if(ws.innerText != 0) {
         ws.innerText--;   
     } else if(wm.innerText != 0 && ws.innerText == 0) {
-    ws.innerText = 59;
-    wm.innerText--;
+        ws.innerText = 59;
+        wm.innerText--;
     }
 
     if(wm.innerText == 0 && ws.innerText == 0) {
@@ -36,14 +36,14 @@ function timer(){
     }
 }
 
-if(wm.innerText == 0 && wm.innerText == 0 && bm.innerText == 0 && bs.innerText == 0) {
-    wm.innerText =25
-    ws.innerText = "00";
+    if(wm.innerText == 0 && wm.innerText == 0 && bm.innerText == 0 && bs.innerText == 0) {
+        wm.innerText =25
+        ws.innerText = "00";
 
-    bm.innerText == 5;
-    bs.innerText == "00"
+        bm.innerText == 5;
+        bs.innerText == "00"
 
-    document.getElementById('counter').innerText++;
-}
+        document.getElementById('counter').innerText++;
+    }
 
 }
