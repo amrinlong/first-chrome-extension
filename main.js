@@ -40,8 +40,8 @@ function timer(){
         wm.innerText =25
         ws.innerText = "00";
 
-        bm.innerText == 5;
-        bs.innerText == "00"
+        bm.innerText = 5;
+        bs.innerText = "00"
 
         document.getElementById('counter').innerText++;
     }
