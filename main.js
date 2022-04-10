@@ -28,6 +28,10 @@ resizeTo.addEventListener('click', function() {
     document.getElementById('counter')innerText = 0;
 })
 
+stop.addEventListener('click', function(){
+    stopInterval()
+})
+
 function timer(){
     //Work Timer Countdown
     if(ws.innerText != 0) {
@@ -58,4 +62,8 @@ function timer(){
         document.getElementById('counter').innerText++;
     }
 
+}
+
+function stopInterval(){
+    clearInterval(startTimer);
 }
