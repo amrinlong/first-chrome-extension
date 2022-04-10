@@ -19,7 +19,7 @@ start.addEventListener('click', function(){
 })
 
 function timer(){
-    //Work Timer
+    //Work Timer Countdown
     if(ws.innerText != 0) {
         ws.innerText--;   
     } else if(wm.innerText != 0 && ws.innerText == 0) {
@@ -27,6 +27,7 @@ function timer(){
         wm.innerText--;
     }
 
+    //Break Timer Countdown
     if(wm.innerText == 0 && ws.innerText == 0) {
         if(bs.innerText != 0) {
             bs.innterText--;
@@ -36,6 +37,7 @@ function timer(){
     }
 }
 
+    //Increment Counter
     if(wm.innerText == 0 && wm.innerText == 0 && bm.innerText == 0 && bs.innerText == 0) {
         wm.innerText =25
         ws.innerText = "00";
