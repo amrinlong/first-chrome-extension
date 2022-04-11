@@ -18,7 +18,7 @@ start.addEventListener('click', function(){
     }
 })
 
-resizeTo.addEventListener('click', function() {
+reset.addEventListener('click', function() {
     wm.innerText = 25;
     ws.innerText = "00";
 
@@ -26,6 +26,8 @@ resizeTo.addEventListener('click', function() {
     bs.innerTest = "00";
 
     document.getElementById('counter')innerText = 0;
+    stopInterval()
+    startTimer = undefined;
 })
 
 stop.addEventListener('click', function(){
