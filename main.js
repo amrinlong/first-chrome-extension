@@ -1,6 +1,6 @@
-var start = document.getElementById("work");
-var stop = document.getElementById("break");
-var reset = document.getElementById("reset");
+const start = document.getElementById("start");
+const stop = document.getElementById("stop");
+const reset = document.getElementById("reset");
 
 var wm = document.getElementById('w_minutes');
 var ws = document.getElementById('w_seconds');
@@ -11,8 +11,9 @@ var bs = document.getElementById('b_seconds');
 var startTimer;
 
 start.addEventListener('click', function(){
+    console.log('Start Button Clicked')
     if(startTimer === undefined) {
-        startTimer = setInteral(timer, 1000)
+        startTimer = setInterval(timer, 1000)
     } else {
         alert('Timer is already running');
     }
