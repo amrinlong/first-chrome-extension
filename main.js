@@ -1,14 +1,14 @@
-const workStartButton = document.getElementById("work");
-const breakStartButton = document.getElementById("break");
-const cycleStartButton = document.getElementById("reset");
+var start = document.getElementById("work");
+var stop = document.getElementById("break");
+var reset = document.getElementById("reset");
 
-var wm = document.getElementById('w_minutes')
-var ws = document.getElementById('w_seconds')
+var wm = document.getElementById('w_minutes');
+var ws = document.getElementById('w_seconds');
 
-var bm = document.getElementById('b_minutes')
-var bm = document.getElementById('b_seconds')
+var bm = document.getElementById('b_minutes');
+var bs = document.getElementById('b_seconds');
 
-var startTimer
+var startTimer;
 
 start.addEventListener('click', function(){
     if(startTimer === undefined) {
@@ -32,6 +32,7 @@ reset.addEventListener('click', function() {
 
 stop.addEventListener('click', function(){
     stopInterval()
+    startTimer = undefined;
 })
 
 function timer(){
