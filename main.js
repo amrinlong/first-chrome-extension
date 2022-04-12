@@ -25,7 +25,7 @@ reset.addEventListener('click', function() {
     bm.innerText = 5;
     bs.innerTest = "00";
 
-    document.getElementById('counter')innerText = 0;
+    document.getElementById('counter').innerText = 0;
     stopInterval()
     startTimer = undefined;
 })
